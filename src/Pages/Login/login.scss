@@ -1,0 +1,205 @@
+.login-div {
+    background: #6259ca;
+    height: 100%;
+    direction: ltr;
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #0d0c22;
+    text-align: left;
+    animation: fadein 500ms ease-in;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.page {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-pack: center;
+    justify-content: center;
+    min-height: 100vh;
+
+    .header-brand-img {
+        height: 2.25rem;
+        line-height: 2rem;
+        vertical-align: middle;
+        margin-right: 0.5rem;
+        width: auto;
+        text-align: center!important;
+        max-width: 100%;
+    }
+
+    .container-login100 {
+        width: 100%;
+        height: 100%;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        padding: 15px;
+        z-index: 999;
+
+        .wrap-login100 {
+            background: #fff;
+            overflow: hidden;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding: 137px 130px 137px 95px;
+            box-shadow: 0 0 4px rgba(0, 0, 0, 0.14), 0 4px 8px rgba(0, 0, 0, 0.06);
+            border-radius: 5px;
+
+            .card-body {
+                margin: 0;
+                position: relative;
+                padding: 25px;
+
+                .login100-form {
+                    display: block;
+                    margin-top: 0em;
+                    width: 320px;
+
+                    .login100-form-title {
+                        font-size: 24px;
+                        line-height: 1.2;
+                        text-align: center;
+                        width: 100%;
+                        display: block;
+                        padding-bottom: 30px;
+                        color: #424344;
+                    }
+
+                    .wrap-input100 {
+                        position: relative;
+                        width: 100%;
+                        z-index: 1;
+                        margin-bottom: 10px;
+
+                        .input100 {
+                            font-size: 15px;
+                            line-height: 1.5;
+                            color: #000;
+                            display: block;
+                            width: 100%;
+                            background: #fff;
+                            height: 45px;
+                            padding: 0 30px 0 54px;
+                            border-radius: 5px;
+                            border: 1px solid #ecf0fa;
+                        }
+
+                        .focus-input100 {
+                            display: block;
+                            position: absolute;
+                            border-radius: 5px;
+                            bottom: 0;
+                            left: 0;
+                            z-index: -1;
+                            width: 100%;
+                            height: 100%;
+                            box-shadow: 0px 0px 0px 0px;
+                            text-transform: uppercase;
+                            background: var(--primary-bg-color);
+                            -webkit-background-clip: text;
+                            -webkit-text-fill-color: transparent;
+                        }
+
+                        .symbol-input100 {
+                            font-size: 17px;
+                            display: -webkit-box;
+                            display: -webkit-flex;
+                            display: -moz-box;
+                            display: -ms-flexbox;
+                            display: flex;
+                            align-items: center;
+                            position: absolute;
+                            border-radius: 5px;
+                            bottom: 0;
+                            left: 0;
+                            width: 100%;
+                            height: 100%;
+                            padding-left: 22px;
+                            pointer-events: none;
+                            -webkit-transition: all 0.4s;
+                            -o-transition: all 0.4s;
+                            -moz-transition: all 0.4s;
+                            transition: all 0.4s;
+                            color: #828996;
+
+                            .zmdi {
+                                display: inline-block;
+                                font: normal normal normal 14px/1 'Material-Design-Iconic-Font';
+                                font-size: inherit;
+                                text-rendering: auto;
+                                -webkit-font-smoothing: antialiased;
+                                -moz-osx-font-smoothing: grayscale;
+                            }
+                        }
+                    }
+
+                    .container-login100-form-btn {
+                        width: 100%;
+                        display: -webkit-box;
+                        display: -webkit-flex;
+                        display: -moz-box;
+                        display: -ms-flexbox;
+                        display: flex;
+                        flex-wrap: wrap;
+                        justify-content: center;
+                        padding-top: 15px;
+                    }
+
+                    .login100-form-btn {
+                        line-height: 1.5;
+                        color: #fff;
+                        width: 100%;
+                        height: 40px;
+                        display: -webkit-box;
+                        display: -webkit-flex;
+                        display: -moz-box;
+                        display: -ms-flexbox;
+                        display: flex !important;
+                        justify-content: center;
+                        align-items: center;
+                        padding: 0 25px;
+                        border-radius: 5px;
+                    }
+
+                    .btn-primary {
+                        color: #fff !important;
+                        background: #6259ca !important;
+                        border-color: #6259ca !important;
+                    }
+
+                    .btn-primary:hover, .btn-primary:focus {
+                        opacity: 0.8;
+                    }
+
+                    .text-primary {
+                        color: #6259ca !important;
+                    }
+
+                    .text-primary:hover, .text-primary:focus {
+                        color: #4e12b6 !important;
+                    }
+                }
+            }
+
+            .card-body> :last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+
+}

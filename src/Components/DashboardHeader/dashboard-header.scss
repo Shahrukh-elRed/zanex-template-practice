@@ -1,0 +1,100 @@
+.dashboard-div {
+    .page {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -ms-flex-pack: center;
+        justify-content: center;
+        min-height: 100vh;
+    }
+
+    .page-main {
+        -ms-flex: 1 1 auto;
+        flex: 1 1 auto;
+
+        .app-header {
+            position: fixed;
+            left: 0;
+            right: 0;
+            top: 0;
+            width: 100%;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            z-index: 999 !important;
+            border-bottom: 1px solid #eaedf1;
+            background: #fff;
+            transition: padding-left 0.3s ease;
+        }
+
+        .header {
+            background: #fff;
+            padding-top: 0.75rem;
+            padding-bottom: 0.75rem;
+            border-bottom: 1px solid #eaedf1;
+
+            .app-sidebar__toggle {
+                color: #495584;
+                z-index: 1;
+                transition: padding-left 0.3s ease;
+                padding: 9px;
+                text-align: center;
+                height: 2.5rem;
+                font-size: 1.5rem;
+                line-height: 1;
+                position: relative;
+                background: #fff;
+                border-radius: 50%;
+                box-shadow: 0px 2px 3px rgba(4, 4, 7, 0.1);
+            }
+
+            img {
+                max-width: 100%;
+                vertical-align: middle;
+                border-style: none;
+            }
+
+            .logo-horizontal {
+                display: none;
+
+                .header-brand-img {
+                    height: 2.25rem;
+                    line-height: 2rem;
+                    vertical-align: middle;
+                    margin-right: 0.5rem;
+                    width: auto;
+                }
+
+                .light-logo1 {
+                    display: block !important;
+                }
+            }
+
+            .main-header-center {
+                position: relative;
+                padding-left: 30px;
+            }
+
+            .header-right-icons {
+                align-items: center;
+            }
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    .app-header {
+        padding-right: 10px;
+        padding-left: 285px;
+        z-index: 9 !important;
+
+        .responsive-logo {
+            display: none;
+        }
+    }
+
+    .sticky {
+        width: 100%;
+    }
+}
